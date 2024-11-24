@@ -596,7 +596,7 @@ class new_contact(page):
             file = open("contacts.txt", "x") #creates new contact list file if one is needed
             file.close()
             file = open("contacts.txt","w")
-            file.write("SELF," + SELF_IP)
+            file.write("SELF," + SELF_IP + "\n")
             file.close()
         except:
             print("contact list file found")
